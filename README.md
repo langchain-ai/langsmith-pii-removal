@@ -1,4 +1,4 @@
-# LangSmith PII Removal Demo
+# LangSmith PII Removal
 
 This repo demonstrates how to prevent logging of sensitive data (PII) in LangSmith traces using environment variables, client input and output manipulation and custom anonymizers.
 
