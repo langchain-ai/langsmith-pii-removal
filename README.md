@@ -1,6 +1,6 @@
 # LangSmith PII Removal
 
-A minimal demo of how to prevent logging of sensitive data (PII) in LangSmith traces using environment variables, client input and output manipulation and custom anonymizers.
+A minimal demo of how to prevent logging of sensitive data/personally identifiable information (PII) in LangSmith traces using environment variables, client input and output manipulation and custom anonymizers.
 
 ## Usage
 - Set environment variables to hide all inputs/outputs.
