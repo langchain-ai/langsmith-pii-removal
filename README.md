@@ -62,7 +62,7 @@ The `langgraph/agent.py` demonstrates how to integrate PII masking into a LangGr
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/langchain-ai/langsmith-pii-removal
    cd langsmith-pii-removal
    ```
 
