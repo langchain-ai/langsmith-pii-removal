@@ -1,12 +1,12 @@
-# 🔒 PII Removal LangSmith + LangGraph
+# 🔒 PII Removal LangSmith
 
 A comprehensive demonstration of how to prevent logging of sensitive data and personally identifiable information (PII) in LangSmith traces using environment variables, client input/output manipulation, custom anonymizers, and LangGraph integration.
 
 ## ✨ Features
 
 - **🔐 Automatic PII Masking**: Uses LangSmith's `create_anonymizer` to automatically mask emails, IP addresses, phone numbers, credit cards, SSNs, and dates
-- **🔄 LangGraph Integration**: Demonstrates PII masking in a LangGraph agent workflow
 - **🛠️ Multiple Approaches**: Shows different methods for PII removal including environment variables, client manipulation, and custom anonymizers
+- **🔄 LangGraph Integration**: Demonstrates PII masking in a LangGraph agent workflow
 
 ## 🛡️ PII Masking Methods
 
