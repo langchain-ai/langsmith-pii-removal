@@ -1,16 +1,16 @@
 from dotenv import load_dotenv
 from contextlib import asynccontextmanager
-from langchain_core.messages import AnyMessage, HumanMessage, SystemMessage
+from langchain_core.messages import AnyMessage, HumanMessage
 from langgraph.graph import END, START, StateGraph
 from langgraph.graph.message import add_messages
-from typing_extensions import Annotated, List, TypedDict
+from typing_extensions import Annotated, TypedDict
 from langsmith import Client
 from langsmith.wrappers import wrap_openai
 import langsmith as ls
 from langsmith.anonymizer import create_anonymizer
 import openai
 
-load_dotenv(dotenv_path="./langgraph/.env", override=True)
+load_dotenv(dotenv_path="../.env", override=True)
 
 # create an anonymizer that masks various PII patterns
 anonymizer = create_anonymizer([
@@ -68,6 +68,6 @@ builder.add_edge("llm_node", END)
 agent = builder.compile()
 
 @asynccontextmanager
-async def create_agent():
+async def compile_agent():
     with ls.tracing_context(client=langsmith_client):
         yield agent
