@@ -1,9 +1,0 @@
-{
-    "graphs": {
-        "pii_masking": "./langgraph/agent.py:create_agent"
-    },
-    "env": ".env",
-    "python_version": "3.11",
-    "dependencies": ["./langgraph/requirements.txt"],
-    "image_distro": "wolfi"
-}
