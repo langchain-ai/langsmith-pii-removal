@@ -1,7 +1,8 @@
 {
     "graphs": {
         "langgraph_pii_masking": "./langgraph-example/agent.py:compile_agent",
-        "langchain_pii_masking": "./langchain-example/agent.py:compile_agent"
+        "langchain_pii_middleware": "./langchain-example/agent_middleware.py:compile_agent",
+        "langchain_pii_client": "./langchain-example/agent_client.py:compile_agent"
     },
     "env": ".env",
     "python_version": "3.11",
