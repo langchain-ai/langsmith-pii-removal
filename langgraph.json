@@ -6,6 +6,6 @@
     },
     "env": ".env",
     "python_version": "3.11",
-    "dependencies": ["requirements.txt"],
+    "dependencies": [".", "pycryptodome"],
     "image_distro": "wolfi"
 }
