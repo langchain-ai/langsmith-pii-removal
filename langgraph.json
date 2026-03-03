@@ -4,8 +4,11 @@
         "langchain_pii_middleware": "./langchain-example/agent_middleware.py:compile_agent",
         "langchain_pii_client": "./langchain-example/agent_client.py:compile_agent"
     },
+    "encryption": {
+        "path": "./langgraph-example/encryptor.py:encryption"
+    },
     "env": ".env",
     "python_version": "3.11",
-    "dependencies": [".", "pycryptodome"],
+    "dependencies": [".", "cryptography"],
     "image_distro": "wolfi"
 }

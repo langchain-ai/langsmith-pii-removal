@@ -1,5 +1,6 @@
 langgraph-sdk>=0.2.9
 pycryptodome
+cryptography
 langgraph-checkpoint-sqlite>=3.0.0
 langchain-community>=0.4.1
 notebook
