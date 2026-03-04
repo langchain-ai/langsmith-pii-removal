@@ -1,7 +1,7 @@
 """
 Custom Fernet-based encryption for LangGraph checkpoint data at rest.
 
-Registered in langgraph_custom.json under `"encryption": {"path": "..."}`.
+Registered in langgraph.json under `"encryption": {"path": "..."}`.
 The server calls encrypt/decrypt hooks before writing to / after reading
 from Postgres, so all checkpoint blobs and JSON fields are stored as
 opaque ciphertext.
@@ -54,7 +54,7 @@ SKIP_FIELDS = {
 ENCRYPTED_PREFIX = "encrypted:"
 
 # ---------------------------------------------------------------------------
-# Encryption instance — referenced by langgraph_custom.json
+# Encryption instance — referenced by langgraph.json
 # ---------------------------------------------------------------------------
 encryption = Encryption()
 
