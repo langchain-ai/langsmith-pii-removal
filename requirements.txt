@@ -11,10 +11,12 @@ langgraph>=1.0.3
 langchain>=1.0.8
 langgraph-cli[inmem]
 python-dotenv
-langchain-openai>=1.0.0
-langsmith>=0.4.0
+langchain-openai>=1.1.14
+langsmith>=0.7.31
 
 # Security: minimum version pins for transitive dependencies
 aiohttp>=3.13.4
 Pygments>=2.20.0
-cryptography>=46.0.6
+cryptography>=46.0.7
+langchain-core>=1.2.28
+langchain-text-splitters>=1.1.2
